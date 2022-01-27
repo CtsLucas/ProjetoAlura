@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400;700;900&display=swap" rel="stylesheet">
+  <title>Projeto Alura - Criptografar</title>
+</head>
+
+<body>
+  <header>
+    <img src="./img/Vector.svg" alt="logo Alura" class="logo">
+  </header>
+  <main class="conteudo">
+    <section class="box1">
+      <h1>CRIPTOGRAFIA DE MENSAGENS</h1>
+      <form action="" class="form">
+        <input type="text" id="input-text" class="input-text" placeholder="Digite seu texto aqui">
+        <label for="" class="descricao">Apenas letras sem acento!</label>
+        <button type="button" id="botaoCriptografar" class="botao">Criptografar</button>
+        <button type="button" id="botaoDescriptografar" class="botao">Descriptografar</button>
+      </form>
+    </section>
+    <section class="box2">
+      <h2>MENSAGEM CRIPTOGRAFADA</h2>
+      <img src="./img/Fundo.svg" alt="Imagem de Fundo">
+      <div id="disabled" class="texto">
+        <p>
+          <strong>Nenhuma mensagem encontrada!</strong>
+        </p>
+        <p>
+          Digite um texto que você deseja criptografar ou descriptografar.
+        </p>
+      </div>
+      <input type="text" id="input-resultado" class="input-text" disabled>
+      <button type="submit" class="botao" onclick="copiarTexto()">Copiar</button>
+
+    </section>
+  </main>
+  <script src="./script.js"></script>
+</body>
+
+</html>
